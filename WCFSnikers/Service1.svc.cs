@@ -12,6 +12,7 @@ namespace WCFSnikers
 {
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "Service1" en el código, en svc y en el archivo de configuración.
     // NOTE: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione Service1.svc o Service1.svc.cs en el Explorador de soluciones e inicie la depuración.
+    [System.Web.Script.Services.ScriptService]
     public class Service1 : IService1
     {
         SqlConnection conexion = new SqlConnection();
@@ -34,12 +35,12 @@ namespace WCFSnikers
                 {
                     Productos producto = new Productos()
                     {
-                        id_producto = reader[0].ToString(),
-                        nombre = reader[1].ToString(),
-                        marca = reader[2].ToString(),
-                        precio = Convert.ToInt32(reader[3]),
-                        objetivo = Convert.ToInt32(reader[4]),
-                        descripcion = reader[5].ToString(),
+                        id_producto   = reader[0].ToString(),
+                        nombre        = reader[1].ToString(),
+                        marca         = reader[2].ToString(),
+                        precio        = Convert.ToInt32(reader[3]),
+                        objetivo      = Convert.ToInt32(reader[4]),
+                        descripcion   = reader[5].ToString(),
                         precio_compra = Convert.ToInt32(reader[6])
                     };
                     products.Add(producto);
@@ -109,12 +110,6 @@ namespace WCFSnikers
                     conexion.Close();
             }
         }
-
-        public void ConectarBD()
-        {
-            conexion.ConnectionString = "workstation id=snikers.mssql.somee.com;packet size=4096;user id=programacion_SQLLogin_1;pwd=srdnzqedpm;data source=snikers.mssql.somee.com;persist security info=False;initial catalog=snikers";
-            comando = conexion.CreateCommand();
-        }
         //AÑADE LA COMPRA
         public int SetCompra(Compra compra)
         {
@@ -164,6 +159,49 @@ namespace WCFSnikers
                 if (conexion != null)
                     conexion.Close();
             }
+        }
+
+        //OBTIENE TODOS LOS PRODUCTOS Y LOS DEVUELVE EN UNA LISTA DE OBJETOS 
+        public List<Productos> GetBusqueda(int objetivo)
+        {
+            List<Productos> products = new List<Productos>();
+            try
+            {
+                conexion.Open();
+                SqlCommand command = new SqlCommand("SELECT * FROM productos WHERE objetivo = "+objetivo+"", conexion);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Productos producto = new Productos()
+                    {
+                        id_producto = reader[0].ToString(),
+                        nombre = reader[1].ToString(),
+                        marca = reader[2].ToString(),
+                        precio = Convert.ToInt32(reader[3]),
+                        objetivo = Convert.ToInt32(reader[4]),
+                        descripcion = reader[5].ToString(),
+                        precio_compra = Convert.ToInt32(reader[6])
+                    };
+                    products.Add(producto);
+                }
+                return products;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (conexion != null)
+                    conexion.Close();
+            }
+        }
+
+        public void ConectarBD()
+        {
+            conexion.ConnectionString = "workstation id=snikers.mssql.somee.com;packet size=4096;user id=programacion_SQLLogin_1;" +
+                                        "pwd=srdnzqedpm;data source=snikers.mssql.somee.com;persist security info=False;initial catalog=snikers";
+            comando = conexion.CreateCommand();
         }
     }
 }

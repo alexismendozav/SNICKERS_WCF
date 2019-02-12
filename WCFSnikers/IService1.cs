@@ -15,6 +15,8 @@ namespace WCFSnikers
         [OperationContract]
         List<Productos> GetProductos();
         [OperationContract]
+        List<Productos> GetBusqueda(int objetivo);
+        [OperationContract]
         int SetCliente(Cliente cliente);
         [OperationContract]
         int SetCompra(Compra compra);
