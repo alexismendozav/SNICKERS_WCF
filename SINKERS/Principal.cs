@@ -83,5 +83,15 @@ namespace SINKERS
             this.pnlPrincipal.Tag = catalogo;
             catalogo.Show();
         }
+
+        private void linkMan_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            mostrarForm(new CHombres());
+        }
+
+        private void btnPresentación_Click(object sender, EventArgs e)
+        {
+            mostrarForm(new Presentacion());
+        }
     }
 }

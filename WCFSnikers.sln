@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSnikers", "WCFSnikers\WCFSnikers.csproj", "{89988EF6-232E-4590-9A24-FE4AD99EE90B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SINKERS", "SINKERS\SINKERS.csproj", "{BA6222D9-94B6-4F28-AC94-DB447EB11DDE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89988EF6-232E-4590-9A24-FE4AD99EE90B} = {89988EF6-232E-4590-9A24-FE4AD99EE90B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

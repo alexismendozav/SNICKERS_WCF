@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.pnlTop = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnPresentación = new System.Windows.Forms.Button();
-            this.btnMaximize = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.linkGirls = new System.Windows.Forms.LinkLabel();
             this.linkWoman = new System.Windows.Forms.LinkLabel();
             this.linkBoys = new System.Windows.Forms.LinkLabel();
             this.linkMan = new System.Windows.Forms.LinkLabel();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.pnlPrincipal = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnPresentación = new System.Windows.Forms.Button();
+            this.btnMaximize = new System.Windows.Forms.Button();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.pnlTop.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -74,73 +74,6 @@
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 4;
             this.label1.Text = "SNICKERS";
-            // 
-            // btnPresentación
-            // 
-            this.btnPresentación.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPresentación.FlatAppearance.BorderSize = 0;
-            this.btnPresentación.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnPresentación.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnPresentación.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPresentación.Image = ((System.Drawing.Image)(resources.GetObject("btnPresentación.Image")));
-            this.btnPresentación.Location = new System.Drawing.Point(7, 3);
-            this.btnPresentación.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnPresentación.Name = "btnPresentación";
-            this.btnPresentación.Size = new System.Drawing.Size(53, 35);
-            this.btnPresentación.TabIndex = 3;
-            this.btnPresentación.UseVisualStyleBackColor = true;
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximize.FlatAppearance.BorderSize = 0;
-            this.btnMaximize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnMaximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Image")));
-            this.btnMaximize.Location = new System.Drawing.Point(861, 6);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(37, 29);
-            this.btnMaximize.TabIndex = 2;
-            this.btnMaximize.UseVisualStyleBackColor = true;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
-            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMinimize.Location = new System.Drawing.Point(815, 7);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(39, 29);
-            this.btnMinimize.TabIndex = 1;
-            this.btnMinimize.UseVisualStyleBackColor = true;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.Location = new System.Drawing.Point(903, 6);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(39, 29);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // panel1
             // 
@@ -213,23 +146,7 @@
             this.linkMan.TabIndex = 2;
             this.linkMan.TabStop = true;
             this.linkMan.Text = "HOMBRES";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSearch.Location = new System.Drawing.Point(902, 13);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(40, 27);
-            this.btnSearch.TabIndex = 3;
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.linkMan.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkMan_LinkClicked);
             // 
             // txtSearch
             // 
@@ -254,6 +171,91 @@
             this.pnlPrincipal.Name = "pnlPrincipal";
             this.pnlPrincipal.Size = new System.Drawing.Size(926, 538);
             this.pnlPrincipal.TabIndex = 2;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSearch.Location = new System.Drawing.Point(902, 13);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(40, 27);
+            this.btnSearch.TabIndex = 3;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // btnPresentación
+            // 
+            this.btnPresentación.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPresentación.FlatAppearance.BorderSize = 0;
+            this.btnPresentación.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnPresentación.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnPresentación.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPresentación.Image = ((System.Drawing.Image)(resources.GetObject("btnPresentación.Image")));
+            this.btnPresentación.Location = new System.Drawing.Point(7, 3);
+            this.btnPresentación.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnPresentación.Name = "btnPresentación";
+            this.btnPresentación.Size = new System.Drawing.Size(53, 35);
+            this.btnPresentación.TabIndex = 3;
+            this.btnPresentación.UseVisualStyleBackColor = true;
+            this.btnPresentación.Click += new System.EventHandler(this.btnPresentación_Click);
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMaximize.FlatAppearance.BorderSize = 0;
+            this.btnMaximize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnMaximize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Image")));
+            this.btnMaximize.Location = new System.Drawing.Point(861, 6);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(37, 29);
+            this.btnMaximize.TabIndex = 2;
+            this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimize.Image")));
+            this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMinimize.Location = new System.Drawing.Point(815, 7);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(39, 29);
+            this.btnMinimize.TabIndex = 1;
+            this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
+            this.btnClose.Location = new System.Drawing.Point(903, 6);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(39, 29);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // Principal
             // 

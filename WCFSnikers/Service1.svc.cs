@@ -168,7 +168,7 @@ namespace WCFSnikers
             try
             {
                 conexion.Open();
-                SqlCommand command = new SqlCommand("SELECT * FROM productos WHERE objetivo = "+objetivo+"", conexion);
+                SqlCommand command = new SqlCommand("SELECT * FROM productos WHERE id_objetivo = "+objetivo+"", conexion);
                 SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
