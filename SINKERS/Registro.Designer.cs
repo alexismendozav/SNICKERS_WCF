@@ -75,7 +75,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.68233F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.30651F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.63854F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.Controls.Add(this.txtContrasena, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtCalle, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtCiudad, 1, 3);
@@ -116,7 +116,7 @@
             this.txtContrasena.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContrasena.Location = new System.Drawing.Point(493, 151);
+            this.txtContrasena.Location = new System.Drawing.Point(491, 151);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.PasswordChar = '*';
             this.txtContrasena.Size = new System.Drawing.Size(265, 23);
@@ -129,7 +129,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCalle.Location = new System.Drawing.Point(97, 151);
             this.txtCalle.Name = "txtCalle";
-            this.txtCalle.Size = new System.Drawing.Size(281, 23);
+            this.txtCalle.Size = new System.Drawing.Size(280, 23);
             this.txtCalle.TabIndex = 18;
             // 
             // txtCiudad
@@ -139,7 +139,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCiudad.Location = new System.Drawing.Point(97, 114);
             this.txtCiudad.Name = "txtCiudad";
-            this.txtCiudad.Size = new System.Drawing.Size(281, 23);
+            this.txtCiudad.Size = new System.Drawing.Size(280, 23);
             this.txtCiudad.TabIndex = 16;
             // 
             // txtEstado
@@ -147,7 +147,7 @@
             this.txtEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEstado.Location = new System.Drawing.Point(493, 77);
+            this.txtEstado.Location = new System.Drawing.Point(491, 77);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(265, 23);
             this.txtEstado.TabIndex = 15;
@@ -157,7 +157,7 @@
             this.txtTel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTel.Location = new System.Drawing.Point(493, 40);
+            this.txtTel.Location = new System.Drawing.Point(491, 40);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(265, 23);
             this.txtTel.TabIndex = 14;
@@ -169,7 +169,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCorreo.Location = new System.Drawing.Point(97, 40);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(281, 23);
+            this.txtCorreo.Size = new System.Drawing.Size(280, 23);
             this.txtCorreo.TabIndex = 13;
             // 
             // txtApellidos
@@ -177,7 +177,7 @@
             this.txtApellidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtApellidos.Location = new System.Drawing.Point(493, 3);
+            this.txtApellidos.Location = new System.Drawing.Point(491, 3);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(265, 23);
             this.txtApellidos.TabIndex = 12;
@@ -189,7 +189,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.Location = new System.Drawing.Point(97, 3);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(281, 23);
+            this.txtNombre.Size = new System.Drawing.Size(280, 23);
             this.txtNombre.TabIndex = 11;
             // 
             // label1
@@ -212,10 +212,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(385, 0);
+            this.label2.Location = new System.Drawing.Point(384, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 37);
+            this.label2.Size = new System.Drawing.Size(100, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "APELLIDOS";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -240,10 +240,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(385, 37);
+            this.label4.Location = new System.Drawing.Point(384, 37);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 37);
+            this.label4.Size = new System.Drawing.Size(100, 37);
             this.label4.TabIndex = 3;
             this.label4.Text = "TELEFONO";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -268,10 +268,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(385, 74);
+            this.label6.Location = new System.Drawing.Point(384, 74);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 37);
+            this.label6.Size = new System.Drawing.Size(100, 37);
             this.label6.TabIndex = 5;
             this.label6.Text = "ESTADO";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -296,10 +296,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(385, 111);
+            this.label8.Location = new System.Drawing.Point(384, 111);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 37);
+            this.label8.Size = new System.Drawing.Size(100, 37);
             this.label8.TabIndex = 7;
             this.label8.Text = "COLONIA";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -324,10 +324,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(385, 148);
+            this.label10.Location = new System.Drawing.Point(384, 148);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 37);
+            this.label10.Size = new System.Drawing.Size(100, 37);
             this.label10.TabIndex = 9;
             this.label10.Text = "CONTRASEÑA";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -339,7 +339,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCp.Location = new System.Drawing.Point(97, 77);
             this.txtCp.Name = "txtCp";
-            this.txtCp.Size = new System.Drawing.Size(281, 23);
+            this.txtCp.Size = new System.Drawing.Size(280, 23);
             this.txtCp.TabIndex = 10;
             // 
             // txtColonia
@@ -347,7 +347,7 @@
             this.txtColonia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtColonia.Location = new System.Drawing.Point(493, 114);
+            this.txtColonia.Location = new System.Drawing.Point(491, 114);
             this.txtColonia.Name = "txtColonia";
             this.txtColonia.Size = new System.Drawing.Size(265, 23);
             this.txtColonia.TabIndex = 17;
@@ -358,10 +358,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(385, 185);
+            this.label13.Location = new System.Drawing.Point(384, 185);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 40);
+            this.label13.Size = new System.Drawing.Size(100, 40);
             this.label13.TabIndex = 20;
             this.label13.Text = "VERIFICAR";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -371,7 +371,7 @@
             this.txtVCotra.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtVCotra.Location = new System.Drawing.Point(493, 188);
+            this.txtVCotra.Location = new System.Drawing.Point(491, 188);
             this.txtVCotra.Name = "txtVCotra";
             this.txtVCotra.PasswordChar = '*';
             this.txtVCotra.Size = new System.Drawing.Size(265, 23);

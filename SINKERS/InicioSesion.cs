@@ -31,7 +31,7 @@ namespace SINKERS
 
         private void InicioSesion_Load(object sender, EventArgs e)
         {
-           
+            this.TopMost = true;
         }
 
         private void btnAccess_Click(object sender, EventArgs e)

@@ -24,6 +24,7 @@ namespace SINKERS
         private void Metodo_pago_Load(object sender, EventArgs e)
         {
             rbtnCredito.Checked = true;
+            this.TopMost = true;
         }
 
         private void btnPresentación_Click(object sender, EventArgs e)
@@ -57,8 +58,16 @@ namespace SINKERS
             }
             else
             {
-                error.SetError(txtCorreo, "");
-                correo = true;
+                if (System.Text.RegularExpressions.Regex.IsMatch(txtCorreo.Text, "[a_zA_Z]*@[a_zA_Z]*"))
+                {
+                    error.SetError(txtCorreo, "");
+                    correo = true;
+                }
+                else
+                {
+                    error.SetError(txtCorreo, "Favor de dijitar un correo valido");
+                }
+             
             }
             //Nombre
             if (txtNombre.Text.Equals(""))
@@ -101,8 +110,15 @@ namespace SINKERS
             }
             else
             {
-                error.SetError(txtMM, "");
-                mm = true;
+                if (System.Text.RegularExpressions.Regex.IsMatch(txtMM.Text, "[0-9]{2}/[0-9]{2}"))
+                {
+                    error.SetError(txtMM, "");
+                    mm = true;
+                }
+                else
+                {
+                    error.SetError(txtMM, "Favor de dijitar la fecha correcta ejemplo: 01/24");
+                }              
             }
 
             //RETORNAR 
@@ -129,6 +145,11 @@ namespace SINKERS
         }
 
         private void txtMM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void txtCsc_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))
             {

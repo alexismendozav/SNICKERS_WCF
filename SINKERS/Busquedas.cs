@@ -13,27 +13,17 @@ namespace SINKERS
     public partial class Busquedas : Form
     {
         string descripcion;
-        string tamaño;
-        public Busquedas(string descripcion, string tamaño)
+        public Busquedas(string descripcion)
         {
             InitializeComponent();
-            this.tamaño = tamaño;
             this.descripcion = descripcion;
-        }
-        public Busquedas()
-        {
-
         }
         private void Busquedas_Load(object sender, EventArgs e)
         {
-            dibujarCatalogo(tamaño);
-         }
-        public void actualizarTamaño(string tamaño)
-        {
-            dibujarCatalogo(tamaño);
+            dibujarCatalogo();
         }
-
-        public void dibujarCatalogo(string tamaño)
+      
+        public void dibujarCatalogo()
         {
             using (WCFSnickers.Service1Client conexion = new WCFSnickers.Service1Client())
             {

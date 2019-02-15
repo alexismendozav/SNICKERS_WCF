@@ -49,7 +49,7 @@ namespace SINKERS
 
         private void Registro_Load(object sender, EventArgs e)
         {
-
+            this.TopMost = true;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

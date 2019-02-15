@@ -14,18 +14,17 @@ namespace SINKERS
     {
         private int posX;
         private int posY;
-        private string tamaño;
         Form catalogo;
-
-
         public Principal()
         {
             InitializeComponent();
         }
+        //CIERRA EL FORM PRINCIPAL Y CON ESTO EL PROYECTO
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        //MOVER EL FORM
         private void pnlTop_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button != MouseButtons.Left)
@@ -43,30 +42,22 @@ namespace SINKERS
         private void btnMaximize_Click(object sender, EventArgs e)
         {
             if (WindowState.ToString() == "Normal")
-            {
-                this.WindowState = FormWindowState.Maximized;
-                tamaño = "grande";
-                
-            }
+                this.WindowState = FormWindowState.Maximized;              
             else
-            {
                 this.WindowState = FormWindowState.Normal;
-                tamaño = "chico";
-            }
+
            
         }
-
         private void Presentacion_Load(object sender, EventArgs e)
         {
             mostrarForm(new Presentacion());
            
         }
-
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
+        //MUESTRA LOS FORMS EN EL PANEL DE ESTE
         private void mostrarForm(object objetivo)
         {
             if (this.pnlPrincipal.Controls.Count > 0)
@@ -91,11 +82,7 @@ namespace SINKERS
         private void btnPresentación_Click(object sender, EventArgs e)
         {
             if (AccesoInternet())
-            {
                 mostrarForm(new Presentacion());
-             
-            }
-         
             else
             mostrarForm(new Internet());
         }
@@ -117,31 +104,11 @@ namespace SINKERS
             else
             {
                 if (AccesoInternet())
-                {
-                    if (WindowState.ToString() == "Normal")
-                        tamaño = "chico";
-                    else
-                        tamaño = "grande";
-                    mostrarForm(new Busquedas(txtSearch.Text, tamaño));
-                }
-
+                    mostrarForm(new Busquedas(txtSearch.Text));
                 else
                     mostrarForm(new Internet());
             }          
-        }
-        private bool AccesoInternet()
-        {
-            try
-            {
-                System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry("www.google.com");
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
-
+        }       
         private void linkBoys_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             if (AccesoInternet())
@@ -157,7 +124,20 @@ namespace SINKERS
             else
                 mostrarForm(new Internet());
 
+        }     
+        //VERFICA QUE HAYA INTERNET
+        private bool AccesoInternet()
+        {
+            try
+            {
+                System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry("www.google.com");
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
-        
+
     }
 }

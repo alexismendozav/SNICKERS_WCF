@@ -239,16 +239,17 @@
             // txtCsc
             // 
             this.txtCsc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCsc.Location = new System.Drawing.Point(363, 331);
+            this.txtCsc.Location = new System.Drawing.Point(531, 331);
             this.txtCsc.Name = "txtCsc";
             this.txtCsc.Size = new System.Drawing.Size(84, 25);
             this.txtCsc.TabIndex = 21;
+            this.txtCsc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCsc_KeyPress);
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(473, 338);
+            this.label4.Location = new System.Drawing.Point(487, 338);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 18);
@@ -258,7 +259,7 @@
             // txtMM
             // 
             this.txtMM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMM.Location = new System.Drawing.Point(517, 331);
+            this.txtMM.Location = new System.Drawing.Point(367, 331);
             this.txtMM.Name = "txtMM";
             this.txtMM.Size = new System.Drawing.Size(98, 25);
             this.txtMM.TabIndex = 23;
@@ -279,6 +280,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
             this.button1.Location = new System.Drawing.Point(166, 398);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(509, 42);

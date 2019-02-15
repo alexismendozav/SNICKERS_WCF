@@ -32,6 +32,8 @@ namespace SINKERS
 
         private void Compra_Load(object sender, EventArgs e)
         {
+
+            this.TopMost = true;
             using (WCFSnickers.Service1Client conexion = new WCFSnickers.Service1Client())
             {         
                 dataGridView1.DataSource = conexion.GetBusquedaClave(modelo);
