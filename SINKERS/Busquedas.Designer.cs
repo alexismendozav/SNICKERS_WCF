@@ -1,6 +1,6 @@
 ﻿namespace SINKERS
 {
-    partial class CHombres
+    partial class Busquedas
     {
         /// <summary>
         /// Required designer variable.
@@ -34,28 +34,25 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(695, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(778, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(26, 15);
+            this.dataGridView1.Size = new System.Drawing.Size(10, 10);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.Visible = false;
             // 
-            // CHombres
+            // Busquedas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(733, 457);
+            this.ClientSize = new System.Drawing.Size(872, 497);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CHombres";
+            this.Name = "Busquedas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CHombres";
-            this.Load += new System.EventHandler(this.CHombres_Load);
+            this.Text = "Busquedas";
+            this.Load += new System.EventHandler(this.Busquedas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

@@ -62,5 +62,10 @@ namespace SINKERS
                 timer1.Start();
             }
         }
+
+        private void Presentacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

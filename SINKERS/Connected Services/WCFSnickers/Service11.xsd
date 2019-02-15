@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PRUEBA1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PRUEBA1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfProductos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Productos" nillable="true" type="tns:Productos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductos" nillable="true" type="tns:ArrayOfProductos" />
+  <xs:complexType name="Productos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_producto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Marca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Objetivo" type="xs:int" />
+      <xs:element minOccurs="0" name="Precio" type="xs:int" />
+      <xs:element minOccurs="0" name="Precio_compra" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Productos" nillable="true" type="tns:Productos" />
+  <xs:complexType name="Cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Apellidos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Calle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Codigo_postal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Colonia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Contrasena" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Correo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_cliente" type="xs:int" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cliente" nillable="true" type="tns:Cliente" />
+  <xs:complexType name="ArrayOfCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cliente" nillable="true" type="tns:Cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCliente" nillable="true" type="tns:ArrayOfCliente" />
+  <xs:complexType name="Compra">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Costo_envio" type="xs:int" />
+      <xs:element minOccurs="0" name="Direccion_entrega" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fecha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_cliente" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_compra" type="xs:int" />
+      <xs:element minOccurs="0" name="PrecioTotal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Compra" nillable="true" type="tns:Compra" />
+  <xs:complexType name="DetalleCompra">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_compra" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_producto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Precio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DetalleCompra" nillable="true" type="tns:DetalleCompra" />
+</xs:schema>

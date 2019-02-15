@@ -48,16 +48,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Busquedas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas.Designer.cs">
+      <DependentUpon>Busquedas.cs</DependentUpon>
+    </Compile>
     <Compile Include="CHombres.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CHombres.Designer.cs">
       <DependentUpon>CHombres.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\WCFSnikers\Reference.cs">
+    <Compile Include="CMujeres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMujeres.Designer.cs">
+      <DependentUpon>CMujeres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CNiñas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNiñas.Designer.cs">
+      <DependentUpon>CNiñas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CNiños.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CNiños.Designer.cs">
+      <DependentUpon>CNiños.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra.Designer.cs">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\WCFSnickers\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Internet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Internet.Designer.cs">
+      <DependentUpon>Internet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodo_pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodo_pago.Designer.cs">
+      <DependentUpon>Metodo_pago.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion.cs">
       <SubType>Form</SubType>
@@ -73,8 +121,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Busquedas.resx">
+      <DependentUpon>Busquedas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CHombres.resx">
       <DependentUpon>CHombres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMujeres.resx">
+      <DependentUpon>CMujeres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CNiñas.resx">
+      <DependentUpon>CNiñas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CNiños.resx">
+      <DependentUpon>CNiños.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra.resx">
+      <DependentUpon>Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Internet.resx">
+      <DependentUpon>Internet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodo_pago.resx">
+      <DependentUpon>Metodo_pago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion.resx">
       <DependentUpon>Presentacion.cs</DependentUpon>
@@ -92,17 +170,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Connected Services\WCFSnikers\Service1.wsdl" />
-    <None Include="Connected Services\WCFSnikers\Service1.xsd">
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\WCFSnickers\Service1.wsdl" />
+    <None Include="Connected Services\WCFSnickers\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WCFSnikers\Service11.xsd">
+    <None Include="Connected Services\WCFSnickers\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WCFSnikers\Service12.xsd">
+    <None Include="Connected Services\WCFSnickers\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WCFSnikers\SINKERS.WCFSnikers.Productos.datasource">
+    <None Include="Connected Services\WCFSnickers\SINKERS.WCFSnickers.Cliente.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WCFSnickers\SINKERS.WCFSnickers.Productos.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
@@ -161,19 +245,16 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\WCFSnikers\" />
+    <WCFMetadataStorage Include="Connected Services\WCFSnickers\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WCFSnikers\Service1.disco" />
+    <None Include="Connected Services\WCFSnickers\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WCFSnikers\configuration91.svcinfo" />
+    <None Include="Connected Services\WCFSnickers\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WCFSnikers\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\WCFSnikers\Reference.svcmap">
+    <None Include="Connected Services\WCFSnickers\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
